@@ -1,0 +1,10 @@
+        var newState = state
+        newState.collage = collageReducer.reduce(newState.collage, action)
+        
+        switch action {
+    mutating func reduce(_ currentState: Collage,
+                         _ action: CollageModification) -> Collage {
+        
+        var newCollage = currentState
+        
+        switch action {
